@@ -71,8 +71,6 @@
                                          name:(NSString*)name
                                     namespace:(NSString*)nspace;
 
-
-
 // identical to requestForSoapEndpoint:object:name:namespace:
 // where namespace is derived with endpoint url, such that it is
 //  protocol://hostname
