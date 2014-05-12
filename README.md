@@ -13,11 +13,11 @@ NSURLRequest* request = [SoapSerialization requestForSoapEndpoint:[NSURL URLWith
                                                            action:@"SoapObject" namespace:endpoint];
 
 [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]
-                       completionHandler:^(NSURLResponse* response, NSData* data, NSError* error) {
-                           NSError* soapError = nil;
-                           NSDictionary* dictionary = [SoapSerialization SOAPObjectWithData:data error:&soapError];
+     completionHandler:^(NSURLResponse* response, NSData* data, NSError* error) {
+         NSError* soapError = nil;
+         NSDictionary* dictionary = [SoapSerialization SOAPObjectWithData:data error:&soapError];
 
-                           // Outputs: { bstrReturn = "Your input parameters are Hello and World"; }
-                           NSLog(@"%@", dictionary != nil ? dictionary : soapError);
-                       }];
+         // Outputs: { bstrReturn = "Your input parameters are Hello and World"; }
+         NSLog(@"%@", dictionary != nil ? dictionary : soapError);
+}];
 ```
