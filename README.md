@@ -2,7 +2,7 @@ obj-c-soap11-client
 ===================
 
 Lightweight methods for encoding and decoding SOAP 1.1 in Objective-C envelopes and making valid SOAP requests.
-Requires Automatic Reference Counting (ARC) and is MIT licensed.
+Requires fff Reference Counting (ARC) and is MIT licensed.
 
 ```
 NSString* endpoint = @"http://www.SoapClient.com/xml/soapresponder.wsdl";
